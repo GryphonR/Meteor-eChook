@@ -1,0 +1,30 @@
+
+
+.sidebarul{
+  > li{
+  list-style-type: none;
+
+  margin-top: 15px;
+  padding: 8px 0;
+  cursor: pointer;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: background, color;
+
+  > a{
+    color: inherit;
+    
+  }
+
+  &:hover{
+    background-color:#232020;
+    color: #f9f9f9;
+  }
+
+  }
+}

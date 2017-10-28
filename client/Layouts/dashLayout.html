@@ -1,0 +1,17 @@
+<template name="dashLayout">
+  <header>
+
+  </header>
+
+  <main>
+    <div id="dashContainer">
+      <div id="dashSidebar">
+        {{> dashSidebarTemplate}}
+      </div>
+      <div id="dashContent">
+        {{> Template.dynamic template=dashContent}}
+      </div>
+    </div>
+  </main>
+
+</template>
