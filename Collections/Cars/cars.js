@@ -11,28 +11,16 @@ carSchema = new SimpleSchema({
     type: String,
     label: "Name",
   },
+  number: {
+    type: Number,
+    label: "Race Number",
+    optional:true,
+  },
   author: {
       type: String,
       label: "Author",
       autoValue: function() {
         return this.userId
-      },
-      autoform:{
-        type:"hidden"
-      }
-  }
-});
-/*
-  ,
-  number: {
-    type: Number,
-    label: "Number",
-  },
-  createdBy:{
-      type: String,
-      label: "Created By",
-      autoValue: function() {
-        return this.userID
       },
       autoform:{
         type:"hidden"
@@ -47,17 +35,9 @@ carSchema = new SimpleSchema({
     autoform:{
       type:"hidden"
     }
-  },
-  distanceLogged: {
-    type: Number,
-    label: "Total Distance Logged",
-    autoValue: function(){
-      return 0
-    },
-    autoform:{
-      type:"hidden"
-    }
   }
-});*/
+
+});
+
 
 Cars.attachSchema(carSchema);
