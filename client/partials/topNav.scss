@@ -1,0 +1,162 @@
+#header-background{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  position:fixed;
+  height:60px;
+  z-index: 20;
+}
+
+#logo{
+  background: #E71B64;
+  width:150px;
+  min-width:150px;
+  text-align: right;
+  padding-right: 0.2em;
+  z-index: 20;
+
+
+  color: #FFFFFF;
+  font: 4em 'Oswald', sans-serif;
+  text-rendering: optimizelegibility;
+  box-shadow:0.1em 0 0.1em 0 rgba(0, 0, 0, .2);
+  vertical-align: bottom;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+
+
+  -webkit-transition: all 0.3;
+  -moz-transition: all 0.3;
+  -ms-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
+
+}
+
+#nav-menu{
+
+  background: #232020;
+
+  font: 1.5em 'Cabin', sans-serif;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  z-index: 15;
+
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+
+  flex-grow: 1;
+
+
+  -webkit-transition: all 0.3;
+  -moz-transition: all 0.3;
+  -ms-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
+}
+
+
+
+
+nav[role="full-horizontal"] {
+
+    text-align: justify;
+    width: 100%;
+
+    ul {
+      width:90%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      list-style:none;
+      list-style-type: none;
+      color:rgba(0,0,0,0);
+      text-align: justify;
+
+      > li {
+        float: left;
+        text-transform:uppercase;
+        cursor:pointer;
+        color:rgba(0,0,0,0);
+        text-align:justify;
+        border-radius:.1em;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+
+
+        &:after {
+          position:absolute;
+          z-index:-1;
+          content:"";
+          right:0;
+          border-radius:50%;
+        }
+
+        &:last-child:after {
+           box-shadow:none;
+        }
+
+        &:hover {
+            background-color:#E71B64;
+
+            >a{ color:#fff}
+        }
+
+        > a {
+          color:#E7E0EB;
+          text-decoration:none;
+          font-size: 1.4em;
+          outline: 0;
+          transition-duration: .3s;
+          transition-timing-function: ease-in-out;
+          transition-property: background, color, padding, border-radius;
+          }
+      }
+    }
+}
+
+.tnActive{
+  background-color: #be1752;
+  colour: #fff;
+  >a{ color:#fff}
+}
+
+/* small screens */
+@media screen and (max-width: 44em) {
+  body {
+    margin:1.5em 0;
+  }
+
+  nav[role="full-horizontal"] {
+    ul {
+      padding:0 .5em;
+    }
+
+    ul > li {
+      width:100%;
+      padding:.45em .25em;
+      margin:0 0 .55em 0;
+
+      &:after {
+        box-shadow:none;
+      }
+    }
+  }
+
+  /*Top Menus for small screens*/
+
+  #logo{
+
+  }
+
+  #nav-menu{
+
+  }
+
+
+}

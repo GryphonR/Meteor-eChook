@@ -2,221 +2,64 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,500|Cabin:400,700);
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-size: 1.0em;
-  }
+}
 
-h2{
+h2 {
   font-family: 'Cabin:700', sans-serif;
   font-weight: bold;
   font: 1.3em;
   margin: 0.5em;
 }
 
-p{
+p {
   font-family: 'Cabin:400', sans-serif;
 }
 
-html,
-body {
-    width:100%;
-    height:100%;
-    text-align: center;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 #mainBody {
-    background:  url(/images/bg-small-dark.jpg) no-repeat center top fixed;
+  background: url("/images/bg-small-dark.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-#homeMain{
-    font-size: 1.5em;
-  }
+#homeMain {
+  font-size: 1.5em;
+}
 
 body {
- font: 1em 'Oswald', sans-serif;
+  font: 1em 'Oswald', sans-serif;
 }
 
-.container{
+.container {
   width: 100%;
-
-   text-align: left;
-   -ms-text-justify: distribute-all-lines;
-   text-justify: distribute-all-lines;
-   font-family: 'Cabin', sans-serif;
+  text-align: left;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  font-family: 'Cabin', sans-serif;
 }
 
-.flex-item{
+.flex-item {}
 
+a {
+  outline: 0;
 }
 
-
-
-
-
-#header-background{
-  display:flex;
-  flex-direction:row;
-  justify-content: space-around;
-  position:fixed;
-  height:60px;
-  z-index: 20;
-}
-
-#logo{
-  background: #E71B64;
-  width:150px;
-  min-width:150px;
-  text-align: right;
-  padding-right: 0.2em;
-  z-index: 20;
-
-
-  color: #FFFFFF;
-  font: 4em 'Oswald', sans-serif;
-  text-rendering: optimizelegibility;
-  box-shadow:0.1em 0 0.1em 0 rgba(0, 0, 0, .2);
-  vertical-align: bottom;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-
-
-  -webkit-transition: all 0.3;
-  -moz-transition: all 0.3;
-  -ms-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3;
-
-}
-
-#nav-menu{
-
-  background: #232020;
-
-  font: 1.5em 'Cabin', sans-serif;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  z-index: 15;
-
-  vertical-align: middle;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-
-  flex-grow: 1;
-
-
-  -webkit-transition: all 0.3;
-  -moz-transition: all 0.3;
-  -ms-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3;
-}
-
-
-
-
-nav[role="full-horizontal"] {
-
-    text-align: justify;
-    width: 100%;
-
-    ul {
-      width:90%;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      list-style:none;
-      list-style-type: none;
-      color:rgba(0,0,0,0);
-      text-align: justify;
-
-      > li {
-        float: left;
-        text-transform:uppercase;
-        cursor:pointer;
-        color:rgba(0,0,0,0);
-        text-align:justify;
-        border-radius:.1em;
-        transition-duration: .3s;
-        transition-timing-function: ease-in-out;
-        transition-property: background, color, padding, border-radius;
-
-
-        &:after {
-          position:absolute;
-          z-index:-1;
-          content:"";
-          right:0;
-          border-radius:50%;
-        }
-
-        &:last-child:after {
-           box-shadow:none;
-        }
-
-        &:hover {
-            background-color:#E71B64;
-        }
-
-        > a {
-          color:#E7E0EB;
-          text-decoration:none;
-          font-size: 1.4em;
-          }
-      }
-    }
-}
-
-/* small screens */
-@media screen and (max-width: 44em) {
-  body {
-    margin:1.5em 0;
-  }
-
-  nav[role="full-horizontal"] {
-    ul {
-      padding:0 .5em;
-    }
-
-    ul > li {
-      width:100%;
-      padding:.45em .25em;
-      margin:0 0 .55em 0;
-
-      &:after {
-        box-shadow:none;
-      }
-    }
-  }
-
-  /*Top Menus for small screens*/
-
-  #logo{
-
-  }
-
-  #nav-menu{
-
-  }
-
-
-}
-
-#intro-background{
+#intro-background {
   background: rgba(35, 32, 32, 0.5);
   color: #f9f9f9;
-
   border-radius: 1em 1em 1em 1em;
   width: 45em;
   margin-left: auto;
@@ -224,13 +67,10 @@ nav[role="full-horizontal"] {
   margin-bottom: 4em;
 }
 
-
-#content-background{
-
+#content-background {
   background: #f9f9f9;
   width: 85%;
   max-width: 1000px;
-
   /*margin-top: 10em;*/
   margin-left: auto;
   margin-right: auto;
@@ -238,188 +78,147 @@ nav[role="full-horizontal"] {
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
-
   text-align: center;
   align-content: center;
-  padding-top: 3em;
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-bottom:0px;
+  padding: 3em 3em 0;
   margin-bottom: 3em;
-
-
-
-
-  overflow:auto;
-
+  overflow: auto;
   font: 'Cabin', sans-serif;
-
   @media screen and (max-width: 500px) {
     padding-left: 1em;
     padding-right: 1em;
-
-
   }
 }
 
-#footer-background{
-
+#footer-background {
   background: #232020;
   width: 85%;
-  height:20em;
-  margin-bottom:3em;
+  height: 20em;
+  margin-bottom: 3em;
   color: #f9f9f9;
-
   /*margin-top: 10em;*/
   margin-left: auto;
   margin-right: auto;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
-
   text-align: center;
   align-content: center;
   padding-top: 3em;
   padding-left: 3em;
   padding-right: 3em;
-
-
-
-
-  overflow:auto;
-
+  overflow: auto;
   font: 'Cabin', sans-serif;
-
   @media screen and (max-width: 500px) {
     padding-left: 1em;
     padding-right: 1em;
-
-
   }
 }
 
-
-
-#title1{
+#title1 {
   text-align: center;
   font: 3.5em 'Oswald', sans-serif;
   color: #232020;
 }
 
-#title1-light{
+#title1-light {
   text-align: center;
   font: 5em 'Oswald', sans-serif;
   color: #ffffff;
 }
 
-.narrow-content{
+.narrow-content {
   text-align: center;
   align-content: center;
   max-width: 80em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   padding-bottom: 1em;
   font-family: 'Cabin', sans-serif;
 }
 
 .container2 {
   width: 100%;
-
   text-align: centre;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
   font-family: 'Cabin', sans-serif;
 }
 
-
-.col1{
-  width:15em;
+.col1 {
+  width: 15em;
   margin-top: 1em;
-  margin-left:2em;
-  margin-right:2em;
-
-  padding: 1em auto 1em auto;
-
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em auto;
   height: 18em;
-
-
   vertical-align: top;
   display: inline-block;
   *display: inline;
   zoom: 1;
-
   @media screen and (max-width: 500px) {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.col2{
-  width:15em;
+.col2 {
+  width: 15em;
   margin-top: 1em;
-  margin-left:2em;
-  margin-right:2em;
+  margin-left: 2em;
+  margin-right: 2em;
   padding: 1em;
   text-align: center;
-
   height: 8em;
-
   vertical-align: top;
   display: inline-block;
   *display: inline;
   zoom: 1;
-
   @media screen and (max-width: 500px) {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-
 }
 
 .stretch {
   width: 100%;
   display: inline-block;
   font-size: 0;
-  line-height: 0
+  line-height: 0;
 }
 
-.topLogo{
+.topLogo {
   color: #FFFFFF;
   font: 3.5em 'Oswald', sans-serif;
   text-rendering: optimizelegibility;
-  box-shadow:0em 0.1em 0.1em 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 0.1em 0.1em 0 rgba(0, 0, 0, .2);
   vertical-align: top;
   display: inline-block;
   *display: inline;
   zoom: 1;
-
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
-
   -webkit-transition: all 0.3;
   -moz-transition: all 0.3;
   -ms-transition: all 0.3;
   -o-transition: all 0.3;
   transition: all 0.3;
-
 }
 
-.topNav{
+.topNav {
   background: #ffffff;
   margin-left: auto;
   margin-right: auto;
   z-index: 15;
-  padding-top:0.2em;
+  padding-top: 0.2em;
   margin-top: 2em;
   height: 3.8em;
-
   vertical-align: middle;
   display: inline-block;
   *display: inline;
   zoom: 1;
   flex-grow: 1;
-
   -webkit-transition: all 0.3;
   -moz-transition: all 0.3;
   -ms-transition: all 0.3;
@@ -427,14 +226,13 @@ nav[role="full-horizontal"] {
   transition: all 0.3;
 }
 
-#spacer-div{
+#spacer-div {
   height: 10em;
 }
 
-#intro-background{
+#intro-background {
   background: rgba(35, 32, 32, 0.5);
   color: #f9f9f9;
-
   border-radius: 1em 1em 1em 1em;
   width: 45em;
   margin-left: auto;
@@ -443,271 +241,214 @@ nav[role="full-horizontal"] {
 }
 
 nav[role="full-horizontal"] {
-    display: inline-block;
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+
+  ul {
     width: 100%;
-    align-items : center;
+    padding-left: 5em;
+    list-style: none;
+    display: inline-block;
+    list-style-type: none;
+    color: rgba(0,0,0,0);
 
-    ul {
-      width:100%;
-      padding-left: 5em;
-      list-style:none;
-      display: inline-block;
-      list-style-type: none;
-      color:rgba(0,0,0,0);
+    > li {
+      position: relative;
+      float: left;
+      padding: 0.25em 1em;
+      margin: 0.5em;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: rgba(0,0,0,0);
+      text-align: center;
+      border-radius: 0.1em;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      transition-property: background, color, padding, border-radius;
 
-      > li {
-        position: relative;
-        float: left;
-        padding:.25em 1em;
-        margin: 0.5em;
+      &:after {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        right: 0;
+        border-radius: 50%;
+      }
 
-        text-transform:uppercase;
-        cursor:pointer;
-        color:rgba(0,0,0,0);
-        text-align:center;
-        border-radius:.1em;
-        transition-duration: .3s;
-        transition-timing-function: ease-in-out;
-        transition-property: background, color, padding, border-radius;
+      &:last-child:after {
+        box-shadow: none;
+      }
 
+      &:hover {
+        background-color: #E71B64;
+      }
 
-        &:after {
-          position:absolute;
-          z-index:-1;
-          content:"";
-          right:0;
-          border-radius:50%;
-        }
-
-        &:last-child:after {
-           box-shadow:none;
-        }
-
-        &:hover {
-            background-color:#E71B64;
-        }
-
-        > a {
-          color:#E7E0EB;
-          text-decoration:none;
-          font-size: 1.4em;
-          }
+      > a {
+        color: #E7E0EB;
+        text-decoration: none;
+        font-size: 1.4em;
       }
     }
+  }
 }
-
 /* small screens */
 @media screen and (max-width: 44em) {
   body {
-    margin:1.5em 0;
+    margin: 1.5em 0;
   }
 
   nav[role="full-horizontal"] {
     ul {
-      padding:0 .5em;
+      padding: 0 0.5em;
     }
 
     ul > li {
-      width:100%;
-      padding:.45em .25em;
-      margin:0 0 .55em 0;
+      width: 100%;
+      padding: 0.45em 0.25em;
+      margin: 0 0 0.55em;
 
       &:after {
-        box-shadow:none;
+        box-shadow: none;
       }
     }
   }
-
   /*Top Menus for small screens*/
+  #logo {}
 
-  #logo{
-
-
-  }
-
-  #nav-menu{
-
-
-  }
-
-
+  #nav-menu {}
 }
 
-
-#content-background{
-
+#content-background {
   background: #f9f9f9;
   width: 85%;
-
   /*margin-top: 10em;*/
   margin-left: auto;
   margin-right: auto;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-
   text-align: center;
   align-content: center;
   padding-top: 3em;
   padding-left: 3em;
   padding-right: 3em;
-
-
-
-
-  overflow:auto;
-
+  overflow: auto;
   font: 'Cabin', sans-serif;
-
   @media screen and (max-width: 500px) {
     padding-left: 1em;
     padding-right: 1em;
-
-
   }
 }
 
-#footer-background{
-
+#footer-background {
   background: #232020;
   width: 85%;
-  height:20em;
-  margin-bottom:3em;
+  height: 20em;
+  margin-bottom: 3em;
   color: #f9f9f9;
-
   /*margin-top: 10em;*/
   margin-left: auto;
   margin-right: auto;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
-
   text-align: center;
   align-content: center;
-  padding-top: 3em;
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-bottom: 20em;
-
-
-
-
-  overflow:auto;
-
+  padding: 3em 3em 20em;
+  overflow: auto;
   font: 'Cabin', sans-serif;
-
   @media screen and (max-width: 500px) {
     padding-left: 1em;
     padding-right: 1em;
-
-
   }
 }
 
-
-
-#title1{
+#title1 {
   text-align: center;
   font: 3.5em 'Oswald', sans-serif;
   color: #232020;
 }
 
-#title1-light{
+#title1-light {
   text-align: center;
   font: 5em 'Oswald', sans-serif;
   color: #ffffff;
 }
 
-.narrow-content{
+.narrow-content {
   text-align: center;
   align-content: center;
   max-width: 80em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   padding-bottom: 1em;
   font-family: 'Cabin', sans-serif;
 }
 
 .container2 {
   width: 100%;
-
   text-align: centre;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
   font-family: 'Cabin', sans-serif;
 }
 
-
-.col1{
-  width:15em;
+.col1 {
+  width: 15em;
   margin-top: 1em;
-  margin-left:2em;
-  margin-right:2em;
-
-  padding: 1em auto 1em auto;
-
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em auto;
   height: 18em;
-
-
   vertical-align: top;
   display: inline-block;
   *display: inline;
   zoom: 1;
-
   @media screen and (max-width: 500px) {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.col2{
-  width:15em;
+.col2 {
+  width: 15em;
   margin-top: 1em;
-  margin-left:2em;
-  margin-right:2em;
+  margin-left: 2em;
+  margin-right: 2em;
   padding: 1em;
-
   height: 8em;
-
   vertical-align: top;
   display: inline-block;
   *display: inline;
   zoom: 1;
-
   @media screen and (max-width: 500px) {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-
 }
 
 .stretch {
   width: 100%;
   display: inline-block;
   font-size: 0;
-  line-height: 0
+  line-height: 0;
 }
 
-
-
-#docHolder{
+#docHolder {
   position: absolute;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   align-content: center;
-  bottom: 0px;
+  bottom: 0;
   height: 100%;
   background: #fff;
   transform: translateX(-50%);
   max-width: 800px;
-
-
 }
 
-#docWindow{
+#docWindow {
   height: 100%;
   width: 100%;
   border-radius: 5px;
-
 }

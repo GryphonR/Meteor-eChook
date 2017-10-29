@@ -1,21 +1,34 @@
 <template name="topNav">
   <main>
     <div id='header-background' class="container">
-            <div id="logo">
-                    eChook
-            </div>
-            <div id='nav-menu'>
-                <nav role="full-horizontal" align="centre">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/docs">Documentation</a></li>
-                        <li><a href="/forum">Forum</a></li>
-                        <li><a href="/dash">Dashboard</a></li>
+      <div id="logo">
+        eChook
+      </div>
+      <div id='nav-menu'>
+        <nav role="full-horizontal" align="centre">
+          <ul id=topNavUl>
+            <li id="tnHome" class="">
+              <a href="/">Home</a>
+            </li>
+            <li id="tnAbout" class="">
+              <a href="/about">About</a>
+            </li>
+            <li id="tnDocs" class="">
+              <a href="/docs">Documentation</a>
+            </li>
+            <li id="tnForum" class="">
+              <a href="/forum">Forum</a>
+            </li>
+            <li id="tnDash" class="">
+              <a href="/dash">Dashboard</a>
+            </li>
+            <li id="tnLogin" class="">
+              {{> loginButtons}}
+            </li>
 
-                    </ul>
-                </nav>
-            </div>
-        </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </main>
 </template>

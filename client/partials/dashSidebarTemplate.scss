@@ -15,10 +15,13 @@
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
   transition-property: background, color;
+  text-decoration-line: none;
 
   > a{
     color: inherit;
-    
+    text-decoration-line: none;
+    font-kerning: normal;
+
   }
 
   &:hover{
@@ -27,4 +30,9 @@
   }
 
   }
+}
+
+.sbActive{
+  background-color:#232020;
+  color: #f9f9f9;
 }
