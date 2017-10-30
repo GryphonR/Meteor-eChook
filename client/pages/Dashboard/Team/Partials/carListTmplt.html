@@ -1,0 +1,17 @@
+<template name="carList">
+  <section class="recipies">
+    {{#each cars}}
+      {{> eachCar}}
+    {{/each}}
+
+  </section>
+
+</template>
+
+<template name="eachCar">
+  <div class="container carPlaque">
+    <div class="title">{{name}}    #{{number}}</div>
+    <div style="font-size:1.5em">------------- Table showing some stats</div>
+    <div style="font-size:1.5em">--------------Links to live data / edit for admin</div>
+  </div>
+</template>

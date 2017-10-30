@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  font: 1em 'Oswald', sans-serif;
+  font: 1em 'Cabin:400', sans-serif;
 }
 
 .container {
@@ -82,13 +82,19 @@ a {
   align-content: center;
   padding: 3em 3em 0;
   margin-bottom: 3em;
-  overflow: auto;
+  overflow: hidden;
   font: 'Cabin', sans-serif;
   @media screen and (max-width: 500px) {
     padding-left: 1em;
     padding-right: 1em;
   }
 }
+
+ >h6{
+   font-size: 1.2em;
+   font-family: 'Cabin' sans-serif;
+   
+ }
 
 #footer-background {
   background: #232020;

@@ -1,0 +1,42 @@
+.new-car-container{
+  background-color: #e6e0e0;
+  width: 60%;
+  right: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+  text-align: left;
+  padding: 3em;
+
+  >p{
+    font-family: 'Cabin:400', sans-serif;
+    font-size: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  >span{
+    font-family: 'Cabin:400', sans-serif;
+    font-size: 1em;
+  }
+}
+
+.carPlaque{
+  display: flex;
+  flex-direction: row;
+  background-color: grey;
+  padding: 3em;
+  max-width: 80em;
+  border-radius: 5px;
+  margin: 3em 5%;
+
+  &:hover{
+    box-shadow: 0px 0px 4px 3px rgba(231,27,100,1);
+  }
+
+
+}
+
+.carPlaque .title{
+  font-size: 3em;
+  font-style: 'Oswald' sans-serif;
+}

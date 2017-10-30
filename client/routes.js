@@ -2,6 +2,9 @@
 FlowRouter.route('/', {
   name: 'home',
   action() {
+
+    GAnalytics.pageview();
+
     BlazeLayout.render("layout", {
       main: "homeLayout"
     });
@@ -22,7 +25,7 @@ FlowRouter.route('/docs', {
       $('#topNavUl li').removeClass('tnActive');
     }
     $('#tnDocs').addClass('tnActive');
-
+    GAnalytics.pageview();
     BlazeLayout.render("layout", {
       main: "docsLayout"
     });
@@ -39,7 +42,7 @@ FlowRouter.route('/about', {
       $('#topNavUl li').removeClass('tnActive');
     }
     $('#tnAbout').addClass('tnActive');
-
+    GAnalytics.pageview();
     BlazeLayout.render("aboutLayout", {
       main: "About"
     });
@@ -54,7 +57,7 @@ FlowRouter.route('/forum', {
       $('#topNavUl li').removeClass('tnActive');
     }
     $('#tnForum').addClass('tnActive');
-
+    GAnalytics.pageview();
     BlazeLayout.render("forumLayout", {
       main: "Forum"
     });
@@ -70,7 +73,7 @@ FlowRouter.route('/dash', {
       $('#topNavUl li').removeClass('tnActive');
     }
     $('#tnDash').addClass('tnActive');
-
+    GAnalytics.pageview();
     BlazeLayout.render("layout", {
       main: "dashLayout"
     });
@@ -86,7 +89,7 @@ FlowRouter.route('/dash/profile', {
       $('.sidebarul li').removeClass('sbActive');
     }
     $('#sbProfile').addClass('sbActive');
-
+    GAnalytics.pageview();
     BlazeLayout.render("dashLayout", {
       dashContent: "userProfile"
     });
@@ -102,7 +105,7 @@ FlowRouter.route('/dash/team', {
       $('.sidebarul li').removeClass('sbActive');
     }
     $('#sbTeam').addClass('sbActive');
-
+    GAnalytics.pageview();
     BlazeLayout.render("dashLayout", {
       dashContent: "myTeam"
     });

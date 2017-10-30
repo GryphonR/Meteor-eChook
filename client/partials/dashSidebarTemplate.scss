@@ -17,8 +17,10 @@
   transition-property: background, color;
   text-decoration-line: none;
 
+
   > a{
     color: inherit;
+    outline: 0;
     text-decoration-line: none;
     font-kerning: normal;
 
