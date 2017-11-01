@@ -91,7 +91,7 @@ FlowRouter.route('/dash/profile', {
     $('#sbProfile').addClass('sbActive');
     GAnalytics.pageview();
     BlazeLayout.render("dashLayout", {
-      dashContent: "userProfile"
+      dashContent: "userProfileContainer"
     });
   }
 });
