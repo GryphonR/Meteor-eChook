@@ -1,40 +1,41 @@
+.sidebarContainer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
 
-
-.sidebarul{
-  > li{
-  list-style-type: none;
-
-  margin-top: 15px;
-  padding: 8px 0;
-  cursor: pointer;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.2em;
-  border-radius: 0.2em;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
-  transition-property: background, color;
-  text-decoration-line: none;
-
-
-  > a{
-    color: inherit;
-    outline: 0;
+.sidebarul {
+  > li {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 8px 0;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: background, color;
     text-decoration-line: none;
-    font-kerning: normal;
 
-  }
+    > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: inherit;
+      outline: 0;
+      text-decoration-line: none;
+      font-kerning: normal;
+    }
 
-  &:hover{
-    background-color:#232020;
-    color: #f9f9f9;
-  }
-
+    &:hover {
+      background-color: #232020;
+      color: #f9f9f9;
+    }
   }
 }
 
-.sbActive{
-  background-color:#232020;
+.sbActive {
+  background-color: #232020;
   color: #f9f9f9;
 }
