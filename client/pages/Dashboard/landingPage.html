@@ -1,0 +1,11 @@
+<template name="landingPage">
+  <body>
+    <h1>Landing Page Ahoy</h1>
+    {{#if currentUser}}
+      {{> profile}}
+    {{else}}
+      {{> register}}
+      {{> login}}
+    {{/if}}
+  </body>
+</template>

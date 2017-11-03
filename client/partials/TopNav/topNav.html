@@ -26,7 +26,13 @@
         </nav>
 
       </div>
-      <div id="tnLogin">{{> loginButtons}}</div>
+      <div id="tnLogin">
+        {{#if currentUser}}
+          {{> logoutButton}}
+        {{else}}
+          {{> loginButton}}
+        {{/if}}
+      </div>
     </div>
   </main>
 </template>

@@ -77,6 +77,9 @@ FlowRouter.route('/dash', {
     BlazeLayout.render("layout", {
       main: "dashLayout"
     });
+    BlazeLayout.render("dashLayout", {
+      dashContent: "landingPage"
+    });
   }
 });
 

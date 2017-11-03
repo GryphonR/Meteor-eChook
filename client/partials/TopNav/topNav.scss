@@ -83,6 +83,7 @@
     }
 
     > a {
+      display: block;
       color: #E7E0EB;
       text-decoration: none;
       font-size: 1.4em;
@@ -107,7 +108,8 @@
 @media screen and (max-width: 44em) {}
 
 #tnLogin {
-  heigh: 60px;
+  font-size: 1.4em;
+  margin-top: 20px;
   grid-row: 1;
   grid-column: 3;
   vertical-align: middle;
