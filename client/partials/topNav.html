@@ -1,12 +1,12 @@
 <template name="topNav">
   <main>
-    <div id='header-background' class="navbar static-navbar-top">
+    <div id='header-background' class="">
       <div id="logo">
         eChook
       </div>
       <div id='nav-menu'>
         <nav role="full-horizontal" align="centre">
-          <ul id=topNavUl>
+          <ul id="topNavUl">
             <li id="tnHome" class="">
               <a href="/">Home</a>
             </li>
@@ -22,13 +22,11 @@
             <li id="tnDash" class="">
               <a href="/dash">Dashboard</a>
             </li>
-            <li id="tnLogin" class="">
-              {{> loginButtons}}
-            </li>
-
           </ul>
         </nav>
+
       </div>
+      <div id="tnLogin">{{> loginButtons}}</div>
     </div>
   </main>
 </template>

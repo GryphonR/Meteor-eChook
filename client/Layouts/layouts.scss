@@ -1,12 +1,18 @@
 #dashContainer {
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #dashSidebar {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background: #3c80c3;
+  grid-column: 1;
+  grid-row: 2 / 4;
+  background: #232020;
 }
 
 #dashContent {
