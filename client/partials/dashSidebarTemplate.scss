@@ -14,10 +14,15 @@
 
 .sidebarul {
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: calc(100vh - 60px);
 
   > li {
+    flex-grow: 0;
     list-style-type: none;
-    margin-top: 15px;
+    margin-top: 15%;
     padding: 8px;
     cursor: pointer;
     margin-left: auto;
