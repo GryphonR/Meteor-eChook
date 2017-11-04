@@ -1,43 +1,52 @@
 Template.register.events({
   'submit form': function(event) {
     event.preventDefault();
-    var emailVar = event.target.registerEmail.value;
-    var passwordVar = event.target.registerPassword.value;
+    var email = event.target.registerEmail.value;
+    var password = event.target.registerPassword.value;
+    var passwordAgain = event.target.registerPassword2.value;
+    var firstName = event.target.firstName.value;
+    var lastName = event.target.lastName.value;
 
     // Trim Helper
     var trimInput = function(val) {
-       return val.replace(/^\s*|\s*$/g, "");
+      return val.replace(/^\s*|\s*$/g, "");
     }
     var email = trimInput(email);
 
     // Check password is at least 6 chars long
     var isValidPassword = function(pwd, pwd2) {
-       if (pwd === pwd2) {
-         return pwd.length >= 6 ? true : false;
-       } else {
-         return swal({
-            title: “Passwords don’t match”,
-            text: “Please try again”,
-            showConfirmButton: true,
-            type: “error”
-         });
-       }
-     }
+      console.log("Checking Passwords " + pwd + ", " + pwd2);
+      if (pwd === pwd2) {
+        console.log("Password Check Validated");
+        return pwd.length >= 6 ? true : false;
+      } else {
+        swal({
+          title: "Passwords don’t match",
+          text: "Please try again",
+          showConfirmButton: true,
+          type: "error"
+        });
+        return false;
+      }
+    }
 
     // If validation passes, supply the appropriate fields to the
     // Accounts.createUser function.
     if (isValidPassword(password, passwordAgain)) {
-       Accounts.createUser({
-           email: email,
-           firstName: firstName,
-           lastName: lastName,
-           password: password
+      console.log("Creating user account");
+      Accounts.createUser({
+        email: email,
+        firstName: firstName,
+        lastName: lastName,
+        password: password
       }, function(error) {
-         if (error) {
-            console.log(“Error: “ + error.reason);
-         } else {
-            FlowRouter.go(‘/’);
-         }
+        if (error) {
+          console.log("Error: " + error.reason);
+        } else {
+          console.log("No Error, Logging in");
+          Meteor.loginWithPassword(email, password);
+          FlowRouter.go('/');
+        }
       });
     }
 
