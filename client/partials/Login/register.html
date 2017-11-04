@@ -1,7 +1,38 @@
 <template name="register">
-  <form>
-    <input type="email" name="registerEmail">
-    <input type="password" name="registerPassword">
-    <input type="submit" value="Register">
-  </form>
+  <div id="login-container">
+    <div id="login-form">
+      <div class="menu-header register-menu-header">Register</div>
+      <div class="menu-divider"></div>
+      <div class="menu-content register-menu-content">
+        <form>
+          <div style="font-size:1em">Email:</div>
+          <div style="text-align:center">
+            <input type="email" name="registerEmail">
+          </div>
+          <div style="font-size:1em">Password:</div>
+          <div style="text-align:center">
+            <input type="password" name="registerPassword">
+          </div>
+
+          <div style="font-size:1em">Confirm Password:</div>
+          <div style="text-align:center">
+            <input type="password2" name="registerPassword2">
+          </div>
+
+          <div style="font-size:1em">First Name:</div>
+          <div style="text-align:center">
+            <input type="name" name="firstName" class="formItem">
+          </div>
+
+          <div style="font-size:1em">Last Name:</div>
+          <div style="text-align:center">
+            <input type="name" name="lastName" class="formItem">
+          </div>
+          <div style="text-align:right">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </template>

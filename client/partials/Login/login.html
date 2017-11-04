@@ -1,7 +1,30 @@
 <template name="login">
-  <form>
-    <input type="email" name="loginEmail">
-    <input type="password" name="loginPassword">
-    <input type="submit" value="Login">
-  </form>
+  <div id="login-container">
+    <div id="login-form">
+      <div class="menu-header login-menu-header">Login</div>
+      <div class="menu-divider"></div>
+      <div class="menu-content login-menu-content">
+        <form>
+          <div style="font-size:1em">Email:</div>
+          <div style="text-align:center">
+            <input type="email" name="loginEmail" class="formItem">
+          </div>
+          <div style="font-size:1em">Password:</div>
+          <div style="text-align:center">
+            <input type="password" name="loginPassword" class="formItem">
+          </div>
+
+          <div style="text-align:right">
+            <input type="submit" value="Login" class="formButton">
+
+            <p style="font-size:0.5em; margin-right:15px">Don't have an account?
+              <a href="/register">
+                Sign Up
+              </a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </template>

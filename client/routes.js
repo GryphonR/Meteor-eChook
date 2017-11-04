@@ -94,7 +94,7 @@ FlowRouter.route('/dash/profile', {
     $('#sbProfile').addClass('sbActive');
     GAnalytics.pageview();
     BlazeLayout.render("dashLayout", {
-      dashContent: "userProfileContainer"
+      dashContent: "profile"
     });
   }
 });
@@ -111,6 +111,28 @@ FlowRouter.route('/dash/team', {
     GAnalytics.pageview();
     BlazeLayout.render("dashLayout", {
       dashContent: "myTeam"
+    });
+  }
+});
+
+// login
+FlowRouter.route('/login', {
+  name: 'dashTeam',
+  action() {
+    GAnalytics.pageview();
+    BlazeLayout.render("layout", {
+      main: "login"
+    });
+  }
+});
+
+// register
+FlowRouter.route('/register', {
+  name: 'dashTeam',
+  action() {
+    GAnalytics.pageview();
+    BlazeLayout.render("layout", {
+      main: "register"
     });
   }
 });

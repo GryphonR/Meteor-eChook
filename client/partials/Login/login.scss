@@ -1,13 +1,47 @@
 .btn-logout {
   background-color: #3c80c3;
-  border-radius: 2px;
-  padding: 7px;
-  color: #fff;
+  border-radius   : 2px;
+  padding         : 7px;
+  color           : #fff;
 }
 
 .btn-login {
   background-color: #E71B64;
-  border-radius: 2px;
-  padding: 7px;
-  color: #fff;
+  border-radius   : 2px;
+  padding         : 7px;
+  color           : #fff;
+}
+
+#login-container {
+  position             : fixed;
+  display              : grid;
+  flex-direction       : row;
+  grid-template-columns: 30% 1fr 30%;
+  grid-template-rows   : 60px 100px 1fr 100px;
+  height               : 100vh;
+  width                : 100vw;
+  justify-content      : center;
+  background           : rgba(255,255,255,0.4);
+}
+
+#register-container {
+  position             : fixed;
+  display              : grid;
+  flex-direction       : row;
+  grid-template-columns: 30% 1fr 30%;
+  grid-template-rows   : 60px 100px 1fr 100px;
+  height               : 100vh;
+  width                : 100vw;
+  justify-content      : center;
+  background           : rgba(255,255,255,0.4);
+  font-size            : 0.8em;
+}
+
+#login-form {
+  grid-row   : 3;
+  grid-column: 2;
+}
+
+.register-menu-content {
+  font-size: 0.5em;
 }

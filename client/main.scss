@@ -6,14 +6,14 @@
 
 * {
   box-sizing: border-box;
-  font-size: 1.0em;
+  font-size : 1.0em;
 }
 
 h2 {
   font-family: 'Cabin:700', sans-serif;
   font-weight: bold;
-  font: 1.3em;
-  margin: 0.5em;
+  font       : 1.3em;
+  margin     : 0.5em;
 }
 
 p {
@@ -22,17 +22,17 @@ p {
 
 body,
 html {
-  width: 100%;
-  height: 100%;
+  width     : 100%;
+  height    : 100%;
   text-align: center;
 }
 
 #mainBody {
-  background: url("/images/bg-small-dark.jpg") no-repeat center top fixed;
+  background             : url("/images/bg-small-dark.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
 }
 
 #homeMain {
@@ -44,11 +44,11 @@ body {
 }
 
 .container {
-  width: 100%;
-  text-align: left;
+  width           : 100%;
+  text-align      : left;
   -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  font-family: 'Cabin', sans-serif;
+  text-justify    : distribute-all-lines;
+  font-family     : 'Cabin', sans-serif;
 }
 
 .flex-item {}
@@ -58,177 +58,177 @@ a {
 }
 
 #intro-background {
-  background: rgba(35, 32, 32, 0.5);
-  color: #f9f9f9;
+  background   : rgba(35, 32, 32, 0.5);
+  color        : #f9f9f9;
   border-radius: 1em 1em 1em 1em;
-  width: 45em;
-  margin-left: auto;
-  margin-right: auto;
+  width        : 45em;
+  margin-left  : auto;
+  margin-right : auto;
   margin-bottom: 4em;
 }
 
 #content-background {
-  background: #f9f9f9;
-  width: 85%;
-  max-width: 1000px;
+  background                : #f9f9f9;
+  width                     : 85%;
+  max-width                 : 1000px;
   /*margin-top: 10em;*/
-  margin-left: auto;
-  margin-right: auto;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  border-bottom-left-radius: 1em;
+  margin-left               : auto;
+  margin-right              : auto;
+  border-top-left-radius    : 1em;
+  border-top-right-radius   : 1em;
+  border-bottom-left-radius : 1em;
   border-bottom-right-radius: 1em;
-  text-align: center;
-  align-content: center;
-  padding: 3em 3em 0;
-  margin-bottom: 3em;
-  overflow: hidden;
-  font: 'Cabin', sans-serif;
+  text-align                : center;
+  align-content             : center;
+  padding                   : 3em 3em 0;
+  margin-bottom             : 3em;
+  overflow                  : hidden;
+  font                      : 'Cabin', sans-serif;
   @media screen and (max-width: 500px) {
-    padding-left: 1em;
+    padding-left : 1em;
     padding-right: 1em;
   }
 }
 
 > h6 {
-  font-size: 1.2em;
+  font-size  : 1.2em;
   font-family: 'Cabin' sans-serif;
 }
 
 #footer-background {
-  background: #232020;
-  width: 85%;
-  height: 20em;
-  margin-bottom: 3em;
-  color: #f9f9f9;
+  background                : #232020;
+  width                     : 85%;
+  height                    : 20em;
+  margin-bottom             : 3em;
+  color                     : #f9f9f9;
   /*margin-top: 10em;*/
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom-left-radius: 1em;
+  margin-left               : auto;
+  margin-right              : auto;
+  border-bottom-left-radius : 1em;
   border-bottom-right-radius: 1em;
-  text-align: center;
-  align-content: center;
-  padding-top: 3em;
-  padding-left: 3em;
-  padding-right: 3em;
-  overflow: auto;
-  font: 'Cabin', sans-serif;
+  text-align                : center;
+  align-content             : center;
+  padding-top               : 3em;
+  padding-left              : 3em;
+  padding-right             : 3em;
+  overflow                  : auto;
+  font                      : 'Cabin', sans-serif;
   @media screen and (max-width: 500px) {
-    padding-left: 1em;
+    padding-left : 1em;
     padding-right: 1em;
   }
 }
 
 #title1 {
   text-align: center;
-  font: 3.5em 'Oswald', sans-serif;
-  color: #232020;
+  font      : 3.5em 'Oswald', sans-serif;
+  color     : #232020;
 }
 
 #title1-light {
   text-align: center;
-  font: 5em 'Oswald', sans-serif;
-  color: #ffffff;
+  font      : 5em 'Oswald', sans-serif;
+  color     : #ffffff;
 }
 
 .narrow-content {
-  text-align: center;
-  align-content: center;
-  max-width: 80em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+  text-align    : center;
+  align-content : center;
+  max-width     : 80em;
+  margin-left   : auto;
+  margin-right  : auto;
+  margin-bottom : 0;
   padding-bottom: 1em;
-  font-family: 'Cabin', sans-serif;
+  font-family   : 'Cabin', sans-serif;
 }
 
 .container2 {
-  width: 100%;
-  text-align: centre;
+  width           : 100%;
+  text-align      : centre;
   -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  font-family: 'Cabin', sans-serif;
+  text-justify    : distribute-all-lines;
+  font-family     : 'Cabin', sans-serif;
 }
 
 .col1 {
-  width: 15em;
-  margin-top: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding: 1em auto;
-  height: 18em;
+  width         : 15em;
+  margin-top    : 1em;
+  margin-left   : 2em;
+  margin-right  : 2em;
+  padding       : 1em auto;
+  height        : 18em;
   vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+  display       : inline-block;
+  *display      : inline;
+  zoom          : 1;
   @media screen and (max-width: 500px) {
-    margin-left: auto;
+    margin-left : auto;
     margin-right: auto;
   }
 }
 
 .col2 {
-  width: 15em;
-  margin-top: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding: 1em;
-  text-align: center;
-  height: 8em;
+  width         : 15em;
+  margin-top    : 1em;
+  margin-left   : 2em;
+  margin-right  : 2em;
+  padding       : 1em;
+  text-align    : center;
+  height        : 8em;
   vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+  display       : inline-block;
+  *display      : inline;
+  zoom          : 1;
   @media screen and (max-width: 500px) {
-    margin-left: auto;
+    margin-left : auto;
     margin-right: auto;
   }
 }
 
 .stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
+  width      : 100%;
+  display    : inline-block;
+  font-size  : 0;
   line-height: 0;
 }
 
 .topLogo {
-  color: #FFFFFF;
-  font: 3.5em 'Oswald', sans-serif;
-  text-rendering: optimizelegibility;
-  box-shadow: 0 0.1em 0.1em 0 rgba(0, 0, 0, .2);
-  vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  color                    : #FFFFFF;
+  font                     : 3.5em 'Oswald', sans-serif;
+  text-rendering           : optimizelegibility;
+  box-shadow               : 0 0.1em 0.1em 0 rgba(0, 0, 0, .2);
+  vertical-align           : top;
+  display                  : inline-block;
+  *display                 : inline;
+  zoom                     : 1;
+  border-top-left-radius   : 3px;
+  border-top-right-radius  : 3px;
   border-bottom-left-radius: 3px;
-  -webkit-transition: all 0.3;
-  -moz-transition: all 0.3;
-  -ms-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3;
+  -webkit-transition       : all 0.3;
+  -moz-transition          : all 0.3;
+  -ms-transition           : all 0.3;
+  -o-transition            : all 0.3;
+  transition               : all 0.3;
 }
 
 .topNav {
-  background: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 15;
-  padding-top: 0.2em;
-  margin-top: 2em;
-  height: 3.8em;
-  vertical-align: middle;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  flex-grow: 1;
+  background        : #ffffff;
+  margin-left       : auto;
+  margin-right      : auto;
+  z-index           : 15;
+  padding-top       : 0.2em;
+  margin-top        : 2em;
+  height            : 3.8em;
+  vertical-align    : middle;
+  display           : inline-block;
+  *display          : inline;
+  zoom              : 1;
+  flex-grow         : 1;
   -webkit-transition: all 0.3;
-  -moz-transition: all 0.3;
-  -ms-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3;
+  -moz-transition   : all 0.3;
+  -ms-transition    : all 0.3;
+  -o-transition     : all 0.3;
+  transition        : all 0.3;
 }
 
 #spacer-div {
@@ -236,47 +236,47 @@ a {
 }
 
 #intro-background {
-  background: rgba(35, 32, 32, 0.5);
-  color: #f9f9f9;
+  background   : rgba(35, 32, 32, 0.5);
+  color        : #f9f9f9;
   border-radius: 1em 1em 1em 1em;
-  width: 45em;
-  margin-left: auto;
-  margin-right: auto;
+  width        : 45em;
+  margin-left  : auto;
+  margin-right : auto;
   margin-bottom: 4em;
 }
 
 nav[role="full-horizontal"] {
-  display: inline-block;
-  width: 100%;
+  display    : inline-block;
+  width      : 100%;
   align-items: center;
 
   ul {
-    width: 100%;
-    padding-left: 5em;
-    list-style: none;
-    display: inline-block;
+    width          : 100%;
+    padding-left   : 5em;
+    list-style     : none;
+    display        : inline-block;
     list-style-type: none;
-    color: rgba(0,0,0,0);
+    color          : rgba(0,0,0,0);
 
     > li {
-      position: relative;
-      float: left;
-      padding: 0.25em 1em;
-      margin: 0.5em;
-      text-transform: uppercase;
-      cursor: pointer;
-      color: rgba(0,0,0,0);
-      text-align: center;
-      border-radius: 0.1em;
-      transition-duration: 0.3s;
+      position                  : relative;
+      float                     : left;
+      padding                   : 0.25em 1em;
+      margin                    : 0.5em;
+      text-transform            : uppercase;
+      cursor                    : pointer;
+      color                     : rgba(0,0,0,0);
+      text-align                : center;
+      border-radius             : 0.1em;
+      transition-duration       : 0.3s;
       transition-timing-function: ease-in-out;
-      transition-property: background, color, padding, border-radius;
+      transition-property       : background, color, padding, border-radius;
 
       &:after {
-        position: absolute;
-        z-index: -1;
-        content: "";
-        right: 0;
+        position     : absolute;
+        z-index      : -1;
+        content      : "";
+        right        : 0;
         border-radius: 50%;
       }
 
@@ -289,9 +289,9 @@ nav[role="full-horizontal"] {
       }
 
       > a {
-        color: #E7E0EB;
+        color          : #E7E0EB;
         text-decoration: none;
-        font-size: 1.4em;
+        font-size      : 1.4em;
       }
     }
   }
@@ -308,9 +308,9 @@ nav[role="full-horizontal"] {
     }
 
     ul > li {
-      width: 100%;
+      width  : 100%;
       padding: 0.45em 0.25em;
-      margin: 0 0 0.55em;
+      margin : 0 0 0.55em;
 
       &:after {
         box-shadow: none;
@@ -324,136 +324,184 @@ nav[role="full-horizontal"] {
 }
 
 #content-background {
-  background: #f9f9f9;
-  width: 85%;
+  background             : #f9f9f9;
+  width                  : 85%;
   /*margin-top: 10em;*/
-  margin-left: auto;
-  margin-right: auto;
-  border-top-left-radius: 1em;
+  margin-left            : auto;
+  margin-right           : auto;
+  border-top-left-radius : 1em;
   border-top-right-radius: 1em;
-  text-align: center;
-  align-content: center;
-  padding-top: 3em;
-  padding-left: 3em;
-  padding-right: 3em;
-  overflow: auto;
-  font: 'Cabin', sans-serif;
+  text-align             : center;
+  align-content          : center;
+  padding-top            : 3em;
+  padding-left           : 3em;
+  padding-right          : 3em;
+  overflow               : auto;
+  font                   : 'Cabin', sans-serif;
   @media screen and (max-width: 500px) {
-    padding-left: 1em;
+    padding-left : 1em;
     padding-right: 1em;
   }
 }
 
 #footer-background {
-  background: #232020;
-  width: 85%;
-  height: 20em;
-  margin-bottom: 3em;
-  color: #f9f9f9;
+  background                : #232020;
+  width                     : 85%;
+  height                    : 20em;
+  margin-bottom             : 3em;
+  color                     : #f9f9f9;
   /*margin-top: 10em;*/
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom-left-radius: 1em;
+  margin-left               : auto;
+  margin-right              : auto;
+  border-bottom-left-radius : 1em;
   border-bottom-right-radius: 1em;
-  text-align: center;
-  align-content: center;
-  padding: 3em 3em 20em;
-  overflow: auto;
-  font: 'Cabin', sans-serif;
+  text-align                : center;
+  align-content             : center;
+  padding                   : 3em 3em 20em;
+  overflow                  : auto;
+  font                      : 'Cabin', sans-serif;
   @media screen and (max-width: 500px) {
-    padding-left: 1em;
+    padding-left : 1em;
     padding-right: 1em;
   }
 }
 
 #title1 {
   text-align: center;
-  font: 3.5em 'Oswald', sans-serif;
-  color: #232020;
+  font      : 3.5em 'Oswald', sans-serif;
+  color     : #232020;
 }
 
 #title1-light {
   text-align: center;
-  font: 5em 'Oswald', sans-serif;
-  color: #ffffff;
+  font      : 5em 'Oswald', sans-serif;
+  color     : #ffffff;
 }
 
 .narrow-content {
-  text-align: center;
-  align-content: center;
-  max-width: 80em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+  text-align    : center;
+  align-content : center;
+  max-width     : 80em;
+  margin-left   : auto;
+  margin-right  : auto;
+  margin-bottom : 0;
   padding-bottom: 1em;
-  font-family: 'Cabin', sans-serif;
+  font-family   : 'Cabin', sans-serif;
 }
 
 .container2 {
-  width: 100%;
-  text-align: centre;
+  width           : 100%;
+  text-align      : centre;
   -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  font-family: 'Cabin', sans-serif;
+  text-justify    : distribute-all-lines;
+  font-family     : 'Cabin', sans-serif;
 }
 
 .col1 {
-  width: 15em;
-  margin-top: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding: 1em auto;
-  height: 18em;
+  width         : 15em;
+  margin-top    : 1em;
+  margin-left   : 2em;
+  margin-right  : 2em;
+  padding       : 1em auto;
+  height        : 18em;
   vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+  display       : inline-block;
+  *display      : inline;
+  zoom          : 1;
   @media screen and (max-width: 500px) {
-    margin-left: auto;
+    margin-left : auto;
     margin-right: auto;
   }
 }
 
 .col2 {
-  width: 15em;
-  margin-top: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding: 1em;
-  height: 8em;
+  width         : 15em;
+  margin-top    : 1em;
+  margin-left   : 2em;
+  margin-right  : 2em;
+  padding       : 1em;
+  height        : 8em;
   vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+  display       : inline-block;
+  *display      : inline;
+  zoom          : 1;
   @media screen and (max-width: 500px) {
-    margin-left: auto;
+    margin-left : auto;
     margin-right: auto;
   }
 }
 
 .stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0;
+  width      : 100%;
+  display    : inline-block;
+  font-size  : 0;
   line-height: 0;
 }
 
 #docHolder {
-  position: fixed;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  position     : fixed;
+  width        : 100%;
+  margin-left  : auto;
+  margin-right : auto;
+  align-items  : center;
   align-content: center;
-  bottom: 0;
-  height: 100%;
-  background: #fff;
-  transform: translateX(-50%);
+  bottom       : 0;
+  height       : 100%;
+  background   : #fff;
+  transform    : translateX(-50%);
 }
 
 #docWindow {
-  margin-top: 60px;
-  height: 100%;
-  width: 100%;
+  margin-top   : 60px;
+  height       : 100%;
+  width        : 100%;
   border-radius: 5px;
+}
+
+.menu-header {
+  width                  : 100%;
+  height                 : auto;
+  color                  : #f9f9f9;
+  background-color       : #232020;
+  font-size              : 3.5em;
+  padding-top            : 20px;
+  padding-bottom         : 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius : 20px;
+  text-emphasis          : left;
+}
+
+.menu-content {
+  width                     : 100%;
+  height                    : auto;
+  color                     : #232020;
+  background-color          : #f9f9f9;
+  font-size                 : 1.3em;
+  padding                   : 10px 40px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius : 20px;
+  padding                   : 20px 50px;
+  text-align                : left;
+}
+
+.formItem {
+  margin-top   : 3px;
+  margin-bottom: 3px;
+}
+
+.menu-divider {
+  width           : 100%;
+  height          : 4px;
+  background-color: #e71b64;
+}
+
+.formButton {
+  background-color: #e71b64;
+  margin          : 15px 15px 10px;
+  outline         : 0;
+  padding         : 10px 20px;
+  border-radius   : 3px;
+  box-shadow      : 0 0 0 0;
+  border          : 0;
+  color           : #fff;
 }
