@@ -7,7 +7,11 @@
       </div>
       <div class="menu-divider"></div>
       <div class="menu-content">
-        team list?
+        {{#if teamNull}}
+          {{> teamSelect}}
+        {{else}}
+          <h2>They have a teams</h2>
+        {{/if}}
       </div>
     </div>
 
