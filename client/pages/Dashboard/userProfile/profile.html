@@ -2,15 +2,21 @@
   <div id="userProfileContainer">
     <div class="profile-wrapper">
       <div class="menu-header profile-title">
-        {{firstName}}
-        {{lastName}}
+        {{#if currentUser}}
+          {{firstName}}
+          {{lastName}}
+        {{else}}
+          <p>loading...</p>
+        {{/if}}
       </div>
       <div class="menu-divider"></div>
       <div class="menu-content">
-        {{#if teamNull}}
-          {{> teamSelect}}
-        {{else}}
-          <h2>They have a teams</h2>
+        {{#if currentUser}}
+          {{#if teamNull}}
+            {{> teamSelect}}
+          {{else}}
+            <h2>You have a team</h2>
+          {{/if}}
         {{/if}}
       </div>
     </div>
