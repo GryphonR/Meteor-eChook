@@ -1,0 +1,24 @@
+<template name="teamSelect">
+
+  <div id="teamSelectContainer">
+    <h2 style="grid-column:1/6; grid-row:1">
+      You don't appear to have a team yet.
+    </h2>
+    <div class="selectTeam">
+      <h3>Join an Existing team</h3>
+      <div class="scrollable">
+        {{#each teams}}
+          {{> teamMenuItem}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="orDivider">
+      <h3>OR</h3>
+    </div>
+    <div class="createNewTeam">
+      <h3>Create a New Team</h3>
+      {{> quickForm collection="Teams" id="insertTeamForm" type="insert" class="insert-team-form"}}
+    </div>
+  </div>
+
+</template>

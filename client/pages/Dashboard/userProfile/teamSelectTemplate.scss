@@ -1,0 +1,63 @@
+#teamSelectContainer {
+  display              : grid;
+  grid-template-columns: 20px 3fr 6em 2fr 20px;
+  grid-template-rows   : auto auto auto;
+  grid-auto-flow       : column;
+  justify-content      : center;
+}
+
+.selectTeam {
+  grid-column: 2;
+  grid-row   : 2;
+}
+
+.orDivider {
+  grid-column: 3;
+  grid-row   : 2;
+  align-self : center;
+}
+
+.createNewTeam {
+  grid-column: 4;
+  grid-row   : 2;
+}
+
+.scrollable {
+  overflow-y: scroll;
+  overflow  : scroll;
+}
+
+.listMenuItem {
+  padding         : 10px;
+  width           : 90%;
+  background-color: #232020;
+  color           : #f9f9f9;
+  border-radius   : 5px;
+  font-size       : 1.3em;
+  margin-top      : 8px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  vertical-align  : middle;
+
+  &:hover {
+    .joinButton {
+      visibility: visible;
+    }
+  }
+}
+
+.joinButton {
+  align-self      : right;
+  right           : 0;
+  color           : #fff;
+  visibility      : hidden;
+  margin-right    : 10px;
+  background-color: #E71B64;
+  border-radius   : 3px;
+  padding         : 6px 13px;
+
+  &:hover {
+    visibility: visible;
+  }
+}
